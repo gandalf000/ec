@@ -52,7 +52,6 @@ POSSIBILITY OF SUCH DAMAGE.
 
 /* This uses procedures from the Galois Field arithmetic library */
 
-#include "inf/ds/rbs/test/jerasure_galois.h"
 
 /* ------------------------------------------------------------ */
 /* In all of the routines below:
