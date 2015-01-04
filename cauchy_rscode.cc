@@ -2,7 +2,6 @@
  * Copyright (c) 2014, The Authors. All rights reserved.
  * @file cauchy_rscode.cpp
  * @brief Cauchy Reed-Solomon encoding and decoding library
- * @author zhouw(zhouw@zhigu.com)
  * @date 2014-12-29
  */
 
@@ -10,8 +9,6 @@
 #include <stdint.h>
 #include <string.h>
 
-namespace phenix {
-namespace common {
 
 static inline void MemXor(const char* src1,  // source buffer 1
                         const char *src2,  // source buffer 2
