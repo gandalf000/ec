@@ -67,3 +67,13 @@ int PartHandle::OnFinishPutPart() {
     else TryPutPart();
 }
 
+  int degrade_read_off = Floor(todo_slice.off);
+    int degrade_read_len = Ceiling(todo_slice.off + todo_slice.len) - degrade_read_off;
+    
+               static inline int Ceiling(int off) {
+    return (off + kCodingUnitSize - 1) / kCodingUnitSize * kCodingUnitSize;
+}
+
+static inline int Floor(int off) {
+    return off / kCodingUnitSize * kCodingUnitSize;
+}
